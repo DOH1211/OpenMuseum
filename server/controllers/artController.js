@@ -125,7 +125,7 @@ module.exports.findArt = function(req, res) {
       result.sort(compareDistance);
       // end of sort by distance from me
 
-  
+      console.log(result)
       res.status(200).send(result);
     }
   });

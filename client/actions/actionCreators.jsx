@@ -8,7 +8,7 @@ export function fetchPosts(location) {
   return (dispatch) => {
     request.then(({data}) => {
       console.log("Post=======", data)
-      dispatch({type: 'FETCH_POSTS', posts: data})
+      dispatch({type: 'FETCH_POSTS', posts: data});
     }).catch(console.log("no DATA at fetchPosts"));
   }
 }
@@ -73,6 +73,7 @@ export function getGeoFromAddress(address) {
       else  {
         console.log("Geolocation data not found");
       }
+      fetchPosts(geoFromAddress);
       dispatch({type: 'GET_GEO_ADDRESS', geoFromAddress: geoFromAddress})
     }).catch(console.log("no DATA at getGeoFromAddress"));
   }    

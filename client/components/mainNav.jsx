@@ -4,6 +4,7 @@ import { Link } from 'react-router';
 class MainNav extends Component {
 
   componentWillMount() {
+    console.log("MainNavPage getting Location");
     this.props.getLocation();
   }
 

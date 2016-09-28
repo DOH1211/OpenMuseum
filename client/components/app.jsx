@@ -5,6 +5,7 @@ import MainNav from './mainNav';
 
 function mapStateToProps(state) {
   return {
+    geoFromAddress: state.geoFromAddress,
     cityName: state.cityName,
     location: state.location,
     posts: state.posts,
