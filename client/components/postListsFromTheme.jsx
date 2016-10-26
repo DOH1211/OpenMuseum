@@ -20,7 +20,7 @@ class PostListsFromTheme extends Component {
       return ( 
         <li className="clearf" key={post._id}>
           <Link to={"posts/" + post._id}>
-            <div className="thumbNail" style={{"background-image":"url(" +thumbPic + ")"}}></div>
+            <div className="thumbNail" style={{"backgroundImage":"url(" +thumbPic + ")"}}></div>
             <div className="listContents">
               <div className="listTitle">{post.title}</div>
               <div className="listText">{post.description.split(" ").slice(0, 4).join(" ") + "..."}</div>

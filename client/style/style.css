@@ -377,7 +377,7 @@ h1, h2 {
 .postLists li {
   width: 47%;
   max-width: 768px;
-  min-width: 414px;
+  min-width: 320px;
   border-bottom: 1px solid #DCDCDC;
   margin-bottom: 20px;
 }
@@ -456,6 +456,30 @@ h1, h2 {
   font-weight: bold;
   font-size: 3rem;
   margin-right: 10px;
+}
+
+/*********** MEDIA QUERIES ***********/
+@media screen and (max-width : 1024px) {
+  html {
+    font-size: 57%;
+  }
+  .gMap {
+    height: 350px;
+  }
+  .gMapSmall {
+    height: 250px;
+  }
+  .listBox {
+    margin-top: 340px;
+  }
+}
+
+@media screen and (max-width : 770px) {
+  .postLists li {
+    width: 90%;
+    max-width: 770px;
+    min-width: 320px;
+  }
 }
 
 /*********** IMAGE SLIDE ************/
