@@ -461,7 +461,7 @@ h1, h2 {
 /*********** MEDIA QUERIES ***********/
 @media screen and (max-width : 1024px) {
   html {
-    font-size: 57%;
+    font-size: 55%;
   }
   .gMap {
     height: 350px;
@@ -474,10 +474,23 @@ h1, h2 {
   }
 }
 
-@media screen and (max-width : 770px) {
+@media screen and (max-width : 715px) {
+  html {
+    font-size: 48%;
+  }
+  .mainTitle {
+  padding-top: 1rem;
+  }
+  .searchBox {
+    margin-top: 4rem;
+  }
+  .postLists {
+    flex-direction: column;
+    align-items: center;
+  }
   .postLists li {
     width: 90%;
-    max-width: 770px;
+    max-width: 715px;
     min-width: 320px;
   }
 }
